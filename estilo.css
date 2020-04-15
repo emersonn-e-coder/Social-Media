@@ -14,7 +14,7 @@ font-family: 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
 }
 p {
   font-family:'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif ;
-  margin-top: 34%;
+  margin-top: 30%;
   margin-left: 35%;
   color: rgb(5, 5, 5);
   text-align: center;
@@ -216,3 +216,34 @@ img.img-8 { /*twitter*/
   margin-top: 4px;
   margin-left: 10%;
 }
+
+div.um {
+  margin-top: -4%;
+  position: relative;
+  width: 318px;
+  height: 25px;
+  border: px solid black;
+  padding: 5px;
+  margin-left: 67%;
+  font-family:'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif ;
+  background-color: rgb(82, 110, 54);
+  color: #cecece;
+  border-radius: 8px;
+  
+}
+
+div.dois {
+  margin-top: 1%;
+  position: relative;
+  width: 318px;
+  height: 25px;
+  border: px solid black;
+  padding: 5px;
+  margin-left: 67%;
+  font-family:'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif ;
+  background-color: rgb(82, 110, 54);
+  color: #cecece;
+  border-radius: 8px;
+  
+}
+
