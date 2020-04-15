@@ -1,0 +1,218 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url('imagens/coruja03.png');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+h1 { color:rgb(255, 254, 254); 
+text-align:center;
+font-family: 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p {
+  font-family:'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif ;
+  margin-top: 34%;
+  margin-left: 35%;
+  color: rgb(5, 5, 5);
+  text-align: center;
+  border-top: 1px solid rgb(5, 5, 5);
+  width: 400px;
+  padding: 5px;
+  
+}
+#check { display: none; }
+
+.main,
+.container {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.main {
+  background-color: rgb(78, 3, 94);/*cor do back do humburger*/
+  box-shadow: 1px 2px 2px rgba(14, 13, 13, 0.35);
+  cursor: pointer;
+  z-index: 50;
+}
+
+.main:hover { background-color: #181818; }
+.plate:hover {background-color: aqua;}
+
+
+.main:active {
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35); 
+  inset: 1px 2px 2px rgba(241, 241, 241, 0.35);
+  background-color: #9166f5;
+}
+.main .title { /*ajuste do humburger*/
+  margin: auto;
+  position: absolute;
+  top: 22%;
+  right: 0;
+  bottom: 0;
+  left: -1px;
+  width: 100%; 
+  height: 80px;
+  font-size: 3em;
+  line-height: 80px;
+  text-align: center;
+  color: #fffdfd;
+}
+
+/*.container { z-index: 10; }*/
+
+.plate { /*tamanho do background de cada icon*/
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px; 
+  height: 50px;
+  opacity: 0;
+  border-radius: 50%;
+  box-shadow: 1px 3px 3px rgba(0,0,0, 0.35);
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.plate i { /*transparencia dos bottons*/
+  width: 100%;
+  font-size: 2em;
+  line-height: 53px;
+  text-align: center;
+  color: #cecece;} 
+
+
+.plate:nth-of-type(1) { /*cores de fundo de cada icons*/
+  background-color: rgba(187,0,0, 0.9); /*Icone youtube*/
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.plate:nth-of-type(2) {
+  background-color: rgba(52, 175, 35, 0.9);/*zap*/
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.plate:nth-of-type(3) {
+  background-color: rgba(163, 102, 51, 0.9);/*insta*/
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.plate:nth-of-type(4) {
+  background-color: rgba(0, 123, 182, 0.9); /*linkedin*/
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.plate:nth-of-type(5) {
+  background-color: rgba(106, 107, 106, 0.9); /*github*/ 
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.plate:nth-of-type(6) {
+  background-color: rgba(56, 87, 116, 0.9); /*tumblr*/
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.plate:nth-of-type(7) {
+  background-color: rgba(0, 106, 221, 0.9); /*facebook*/
+  -webkit-transition-delay: 0.6s;
+  -moz-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.plate:nth-of-type(8) {
+  background-color: rgba(0, 172, 237, 0.9); /*twitter*/
+  -webkit-transition-delay: 0.7s;
+  -moz-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+/*===============================================================*/
+/*Controlar o menu para direita ou esquerda*/
+#check:checked ~ .main + .container .plate { 
+  opacity: 1; }
+
+#check:checked ~ .main + .container .plate:nth-of-type(1) { 
+  top: -180%; }
+
+#check:checked ~ .main + .container .plate:nth-of-type(2) {
+  top: -130%;
+  right: -130%;}
+
+#check:checked ~ .main + .container .plate:nth-of-type(3) { 
+  right: -180%; }
+
+#check:checked ~ .main + .container .plate:nth-of-type(4) {
+  right: -130%;
+  bottom: -130%;}
+
+#check:checked ~ .main + .container .plate:nth-of-type(5){ 
+  bottom: -180%; }
+
+#check:checked ~ .main + .container .plate:nth-of-type(6) {
+  bottom: -130%;
+  left: -130%;}
+
+#check:checked ~ .main + .container .plate:nth-of-type(7) { 
+  left: -180%; }
+
+#check:checked ~ .main + .container .plate:nth-of-type(8) {
+  top: -130%;
+  left: -130%;
+}
+img.img-1{ /*youtube*/
+  margin-top: 14px;
+  margin-left: 7.8px;
+}
+img.img-2 { /*whatsapp*/
+  margin-top: 9px;
+  margin-left: 18%;
+}
+img.img-3 { /*instagram*/
+  margin-top: 3px;
+  margin-left: 4%;
+}
+img.img-4 { /*linkedin*/
+  margin-top: 9px;
+  margin-left: 19%;
+}
+img.img-5 { /*github*/
+  margin-top: 9px;
+  margin-left: 18%;
+}
+img.img-6 { /*thumblr*/
+  margin-top: 5px;
+  margin-left: 12%;
+}
+img.img-7 { /*facebook*/
+  margin-top: 5px;
+  margin-left: 8%;
+}
+img.img-8 { /*twitter*/
+  margin-top: 4px;
+  margin-left: 10%;
+}
