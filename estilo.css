@@ -294,4 +294,53 @@ div.dois {
   }
     
  }
+ /*=====================================*/
+
+ @media (max-width:640px) and (orientation:landscape){
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    background-image: url('imagens/coruja03.png');
+   }
+  
+  h1 { 
+  margin-top: 3%;
+  margin-left: 25%;
+  }
+  p {
+    margin-top: -5%;
+    margin-left: 62%;
+    color: #cecece; 
+    width: 200px;
+    border-top: 1px solid #cecece;
+    }
+  
+  
+  div.um {
+    margin-top: 33%;
+   
+    height:22px;
+   
+    padding: 2px;
+    margin-left: 5%;
+    
+  }
+  
+  div.dois {
+    margin-top: 1%;
+    
+    height: 22px;
+    
+    padding: 2px;
+    margin-left: 5%;
+    
+  }
+    
+ }
+
 
