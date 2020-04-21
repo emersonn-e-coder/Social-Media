@@ -247,3 +247,51 @@ div.dois {
   
 }
 
+/*===========================Mobile Vertical============================*/
+
+@media (max-width:360px) and (orientation:portrait) 
+{
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    background-image: url('imagens/coruja-mobile-portrait.png');
+   }
+  
+  h1 { 
+  margin-top: 5%;
+  }
+  p {
+    margin-top: 10%;
+    margin-left: 6%;
+    color: rgb(12, 12, 12); 
+    width: 300px;
+    }
+  
+  
+  /*============================================================*/
+  div.um {
+    margin-top: 118%;
+   
+    height:24px;
+   
+    padding: 1px;
+    margin-left: 4%;
+    
+  }
+  
+  div.dois {
+    margin-top: 2%;
+    
+    height: 24px;
+    
+    padding: 1px;
+    margin-left: 4%;
+    
+  }
+    
+ }
+
