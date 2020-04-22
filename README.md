@@ -3,4 +3,4 @@
 ### Clique nos links abaixo ###
 * [Conheça mais em meu GitHub Pages](https://emersonn-e-coder.github.io/)
 * [Clique aqui](https://emersonn-e-coder.github.io/Social-Media/)
- ![botton](https://github.com/emersonn-e-coder/Social-Media/blob/master/imagens/paper2.png)
+ ![botton](https://github.com/emersonn-e-coder/Social-Media/blob/master/imagens/paer-coruja-ofic.png)
